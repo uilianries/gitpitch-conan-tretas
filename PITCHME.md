@@ -61,7 +61,7 @@ Ex-Khomp (01/17 - 09/18)
 
 #### Sobre Esta Apresentação
 
-![wheel-of-pain](assets/gif/wheel)
+![wheel-of-pain](assets/gif/wheel.gif)
 
 - Apresentar novas features
 - Discutir os sintomas do Dev
