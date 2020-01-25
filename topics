@@ -1,9 +1,12 @@
 #### TOPICS
 
+TODO
 - Deploy generator
 - Editable packages
 - Workflows
 - Lockfiles
 - Package Revisions
+
+DONE
 - Conan Center Index
 - Conan Days

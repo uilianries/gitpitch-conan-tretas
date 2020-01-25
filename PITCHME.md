@@ -1,6 +1,6 @@
 ## Resolvendo Tretas com Conan.io
 
-#### A ascenção e a queda do bárbaro
+#### A Ascenção e a Queda do Bárbaro
 
 ![conan](assets/img/conan-small.png)
 
@@ -94,6 +94,31 @@ https://github.com/conan-io/conan-center-index/wiki
     contínua própria e submeter para Bintray cada pacote.
   - Contudo, existem regras de qualidade que limitam a
     liberdade de cada receita.
+
+---?image=assets/img/lego-dark-green.png
+
+#### Conan Days
+
+http://bit.ly/2TU94Ki
+
+- Madri, 19/03 e 20/03, 2020
+- Talks de empresas e suas experiências
+- Treinamentos e feedback das empresas
+- Ingresso variam entre €50 e €450
+
+---?image=assets/img/lego-dark-red.png
+
+#### Wheel of Pain
+
+![wheel-of-pain](assets/gif/wheel.gif)
+
+Vamos discutir os sintomas do Dev:
+
+- Quais as maiores tretas atuais?
+- Como está sendo utilizado?
+  - Receitas internas apenas?
+  - Build sources sempre?
+- O que o Dev deseja da ferramenta?
 
 ---?image=assets/img/lego-dark-white.png
 
