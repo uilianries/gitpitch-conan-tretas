@@ -11,7 +11,8 @@
 Olá!
 <br>
 <br>
-**Uilian Ries**
+**Uilia'N' Ries**
+
 <br>
 <br>
 Desenvolvedor C++ e Python
@@ -29,6 +30,7 @@ Ex-Khompanheiro (Jan/2017 - Set/2018)
 
 @div[right-30]
 ![me](assets/img/me.png)
+* Não é Reis, nem Dias, nem Rias
 @divend
 
 ---?image=assets/img/lego-dark-blue.png
