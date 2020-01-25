@@ -12,6 +12,7 @@ Olá!
 <br>
 <br>
 **Uilia'N' Ries**
+* Não é Reis, nem Dias, nem Rias
 
 <br>
 <br>
@@ -30,7 +31,6 @@ Ex-Khompanheiro (Jan/2017 - Set/2018)
 
 @div[right-30]
 ![me](assets/img/me.png)
-* Não é Reis, nem Dias, nem Rias
 @divend
 
 ---?image=assets/img/lego-dark-blue.png
