@@ -57,6 +57,18 @@ Ex-Khomp (01/17 - 09/18)
 ![cpp](assets/img/logo.png)
 @divend
 
+---?image=assets/img/lego-dark-red.png
+
+#### Sobre Esta Apresentação
+
+![wheel-of-pain](assets/gif/wheel)
+
+- Apresentar novas features
+- Discutir os sintomas do Dev
+- Não haverá introdução ao Conan:
+  - https://gitpitch.com/uilianries/gitpitch-conan
+  - https://docs.conan.io/en/latest/videos.html
+
 ---?image=assets/img/lego-dark-green.png
 
 #### Conan Center Index
