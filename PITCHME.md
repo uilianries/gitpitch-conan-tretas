@@ -42,7 +42,7 @@ Ex-Khompanheiro (Jan/2017 - Set/2018)
   <li>Licença MIT</li>
   <li>Descentralizado como GIT</li>
   <li>Manipula fontes e binários</li>
-  <li>Geradores para CMake, VS, XCode, qmake …</li>
+  <li>Geradores para CMake, Visual Studio, pkgconfig …</li>
   <li>Desenvolvido em Python</li>
   <li>+180 contribuidores</li>
   <li>Versão Atual 1.21.1 (Jan/2020)</li>
@@ -56,7 +56,7 @@ Ex-Khompanheiro (Jan/2017 - Set/2018)
 
 #### Conan Center Index
 
-https://github.com/conan-io/conan-center-index
+https://github.com/conan-io/conan-center-index/wiki
 
 - Lançado em 09/2019
 - Centralização de todos os pacotes Conan
@@ -66,6 +66,11 @@ https://github.com/conan-io/conan-center-index
 - Pacotes não mais portarão *namespace* em sua referência
   - e.g. zlib/1.2.11
   - Feature requer Conan >= 1.18.0
+
+---?image=assets/img/lego-dark-green.png
+
+#### Conan Center Index
+
 - Base de pesquisa através do https://conan.io/center
 - O interessado, abre um PR apenas com a receita e pronto
   - Anteriormente, era necessário cada um manter a integração
