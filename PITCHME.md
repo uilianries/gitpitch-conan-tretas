@@ -107,6 +107,8 @@ https://github.com/conan-io/conan-center-index
 
 #### Conan Days
 
+![conan-days](assets/img/conan-days.png)
+
 http://bit.ly/2TU94Ki
 
 - Madri, 19/03 e 20/03, 2020
