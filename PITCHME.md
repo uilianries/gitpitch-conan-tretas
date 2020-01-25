@@ -73,7 +73,7 @@ Ex-Khomp (01/17 - 09/18)
 
 #### Conan Center Index
 
-https://github.com/conan-io/conan-center-index/wiki
+https://github.com/conan-io/conan-center-index
 
 - Lançado em 09/2019
 - Centralização de todos os pacotes Conan
