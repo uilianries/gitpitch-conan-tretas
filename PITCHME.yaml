@@ -1,0 +1,15 @@
+theme: night
+highlight : monokai
+
+footnote : "<a href='https://uilianries.github.io'><font size='3' color='white'>@uilianries</font></a>"
+
+theme-override : assets/css/PITCHME.css
+
+logo : assets/img/jfrog_conan.png
+logo-position : bottom-right
+
+background : assets/img/lego-dark-blue.png
+
+transition : fade
+
+mousewheel : true
