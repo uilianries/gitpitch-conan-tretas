@@ -4,6 +4,14 @@
 
 ![conan](assets/img/conan-small.png)
 
+---?image=assets/img/lego-dark-blue.png
+
+#### Link desta Apresentação
+
+http://bit.ly/3aL13xc
+
+https://gitpitch.com/uilianries/gitpitch-conan-tretas
+
 ---?image=assets/img/lego-dark-green.png
 @title[Sobre mim]
 
