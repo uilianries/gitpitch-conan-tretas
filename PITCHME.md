@@ -19,7 +19,7 @@ Desenvolvedor C++ e Python
 Trabalha para a **@jfrog**
 <br>
 <br>
-Ex-Khompanheiro
+Ex-Khompanheiro (Jan/2017 - Set/2018)
 <br>
 <br>
 @uilianries
