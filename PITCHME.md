@@ -96,8 +96,8 @@ Ex-Khomp (01/17 - 09/18)
 
     conan install . -g deploy
 
-- Quando precisa instalar tudo num lugar só
-- Copia todos os artefatos pr dir atual
+- Quando precisa instalar tudo em um lugar só
+- Copia todos os artefatos para o diretório atual
 - Não vai pra cache do Conan
 - Útil quando precisa empacotar pro cliente
 
