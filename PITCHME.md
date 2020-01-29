@@ -67,7 +67,7 @@ Ex-Khomp (01/17 - 09/18)
 
 ---?image=assets/img/lego-dark-red.png
 
-#### Sobre Esta Apresentação
+#### Sobre esta Apresentação
 
 ![crush-your-enemies](assets/gif/crush.gif)
 
@@ -76,6 +76,44 @@ Ex-Khomp (01/17 - 09/18)
 - Não haverá introdução ao Conan:
   - https://gitpitch.com/uilianries/gitpitch-conan
   - https://docs.conan.io/en/latest/videos.html
+
+---?image=assets/img/lego-dark-red.png
+
+#### Sobre esta Apresentação
+
+- Deploy generator
+- Deploying packages
+- Editable packages
+- Workflows
+- Lockfiles
+- Package Revisions
+- Conan Center Index
+- Conan Days
+
+---?image=assets/img/lego-dark-green.png
+
+#### Deploy Generator
+
+    conan install . -g deploy
+
+- Quando precisa instalar tudo num lugar só
+- Copia todos os artefatos pr dir atual
+- Não vai pra cache do Conan
+- Útil quando precisa empacotar pro cliente
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Deploying Packages
+
+```python
+    def deploy(self)
+        self.copy("foo", dst="bin", src="bin")
+```
+
+    conan create . user/testing
+
+- Mesma efeito do que o gerador Deploy, porém
+  já definido na receita.
 
 ---?image=assets/img/lego-dark-green.png
 
