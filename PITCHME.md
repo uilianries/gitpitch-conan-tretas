@@ -269,7 +269,6 @@ pkg/0.1@user/channel: pero que las hay las hay
 #### Conan Data (conandata.yml)
 
 ```yml
----
 sources:
   1.0.0:
     url: "https://ftp.org/release/pkg-1.0.0.tar.gz"
