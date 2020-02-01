@@ -161,11 +161,11 @@ def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
 
 - Para ativar um hook:
 
-    `conan config set hooks.check_settings`
+    conan config set hooks.check_settings
 
 - Para desativar um hook:
 
-    `conan config rm hooks.check_settings`
+    conan config rm hooks.check_settings
 
 
 ---?image=assets/img/lego-dark-green.png
