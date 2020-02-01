@@ -215,10 +215,10 @@ http://bit.ly/2TU94Ki
 
 Vamos discutir os sintomas do Dev:
 
-- Quais as maiores tretas atuais?
+- Quais as maiores barreiras atuais?
 - Como está sendo utilizado?
   - Receitas internas apenas?
-  - Build sources sempre?
+  - Build from sources sempre?
 - O que o Dev deseja da ferramenta?
 
 ---?image=assets/img/lego-dark-white.png
