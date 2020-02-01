@@ -167,6 +167,9 @@ def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
 
     `conan config rm hooks.check_settings`
 
+
+---?image=assets/img/lego-dark-green.png
+
 #### Conan Center Index
 
 https://github.com/conan-io/conan-center-index
