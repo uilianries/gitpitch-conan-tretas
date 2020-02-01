@@ -171,8 +171,6 @@ Para desativar um hook:
 
 #### Python Requires
 
-https://docs.conan.io/en/latest/extending/python_requires
-
 - Permite compartilhar código e arquivos entre diferente receitas
 - Útil para não precisar reescrever mesmo trecho
 - Existe uma versão legado desta feature!
@@ -264,13 +262,14 @@ pkg/0.1@user/channel: pero que las hay las hay
 
 - Arquivo YAML carregado automaticamente pela receita
 - Pode ser acessado através do atributo `conan_data`
-- Útil quando uma mesma receita é usar para qualquer nova versão
+- Útil quando uma mesma receita é utilizada para qualquer nova versão
 
 ---?image=assets/img/lego-dark-red.png
 
 #### Conan Data (conandata.yml)
 
 ```yml
+---
 sources:
   1.0.0:
     url: "https://ftp.org/release/pkg-1.0.0.tar.gz"
@@ -291,13 +290,15 @@ patches:
 
 ```python
 class Foo(ConanFile):
-    name = "pkg"
+  name = "pkg"
 
   def source(self):
       tools.get(**self.conan_data["sources"][self.version])
       for patch in self.conan_data["patches"][self.version]:
         tools.patch(**patch)
 ```
+
+    conan create . pkg/1.0.0@user/channel
 
 ---?image=assets/img/lego-dark-green.png
 
