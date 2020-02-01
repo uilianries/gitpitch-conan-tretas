@@ -161,11 +161,11 @@ def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
 
 - Para ativar um hook:
 
-    conan config set hooks.check_settings
+      conan config set hooks.check_settings
 
 - Para desativar um hook:
 
-    conan config rm hooks.check_settings
+      conan config rm hooks.check_settings
 
 ---?image=assets/img/lego-dark-blue.png
 
@@ -210,6 +210,52 @@ class Pkg(ConanFile):
         v = self.python_requires["pyreq"].module.myvar
         f = self.python_requires["pyreq"].module.myfunct()
         self.output.info("%s,%s" % (v, f))
+```
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Python Requires
+
+Extendendo classes
+
+```python
+from conans import ConanFile
+
+class MyBase(ConanFile):
+    name = "base"
+    version = "0.1.0"
+
+    def source(self):
+        self.output.info("no creo en las brujas")
+    def build(self):
+        self.output.info("pero que las hay las hay")
+```
+
+    conan export . user/channel
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Python Requires
+
+```python
+from conans import ConanFile
+
+class Pkg(ConanFile):
+    name = "pkg"
+    version = "0.1.0"
+    python_requires = "base/0.1.0@uilianries/testing"
+    python_requires_extend = "base.MyBase"
+
+    def source(self):
+        self.output.info("Miguel de Cervantes")
+```
+
+    conan create . pkg/0.1.0@user/channel
+
+```
+...
+pkg/0.1@user/channel: Miguel de Cervantes
+pkg/0.1@user/channel: pero que las hay las hay
 ```
 
 ---?image=assets/img/lego-dark-green.png
