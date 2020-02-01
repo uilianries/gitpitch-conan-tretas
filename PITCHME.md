@@ -20,10 +20,6 @@ Olá!
 <br>
 <br>
 **Uilian Ries**
-<br>
-\* Uilian é problema de cartório
-<br>
-\*\* Não é Reis, nem Dias, nem Rias
 
 <br>
 <br>
@@ -83,6 +79,9 @@ Ex-Khomp (01/17 - 09/18)
 
 - Deploy generator
 - Deploying packages
+- Hooks
+- Python requires
+- conandata.yml
 - Editable packages
 - Workflows
 - Lockfiles
@@ -99,7 +98,7 @@ Ex-Khomp (01/17 - 09/18)
 - Quando precisa instalar tudo em um lugar só
 - Copia todos os artefatos para o diretório atual
 - Não vai pra cache do Conan
-- Útil quando precisa empacotar pro cliente
+- Útil quando precisa empacotar para o cliente
 
 ---?image=assets/img/lego-dark-blue.png
 
@@ -112,10 +111,59 @@ Ex-Khomp (01/17 - 09/18)
 
     conan create . user/testing
 
-- Mesma efeito do que o gerador Deploy, porém
+- Mesmo efeito do que o gerador Deploy, porém
   já definido na receita.
 
 ---?image=assets/img/lego-dark-green.png
+
+#### Hooks
+
+    https://github.com/conan-io/hooks
+
+- Função Python que será executada em meio ao fluxo de trabalho
+- Não modifica o cliente Conan ou as receitas
+- Útil para executar passos customizados
+- Exemplos: pylint na receita, disparar CI depois de um upload
+
+---?image=assets/img/lego-dark-green.png
+
+#### Hooks
+
+- Criar um script Python, utilizando os métodos suportados
+
+```python
+# ~/.conan/hooks/check_settings.py
+
+def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
+    settings = getattr(conanfile, "settings")
+    if settings and "cppstd" in settings:
+        raise ConanException("The 'cppstd' setting is deprecated.")
+```
+
+---?image=assets/img/lego-dark-green.png
+
+#### Hooks
+
+- Métodos suportados (não todos):
+  - `pre_export(output, conanfile, conanfile_path, reference, **kwargs)`
+  - `post_export(output, conanfile, conanfile_path, reference, **kwargs)`
+  - `pre_source(output, conanfile, conanfile_path, **kwargs)`
+  - `post_source(output, conanfile, conanfile_path, **kwargs)`
+  - `pre_build(output, conanfile, **kwargs)`
+  - `post_build(output, conanfile, **kwargs)`
+  - `pre_package(output, conanfile, conanfile_path, **kwargs)`
+  - `post_package(output, conanfile, conanfile_path, **kwargs)`
+  - `pre_upload(output, conanfile_path, reference, remote, **kwargs)`
+
+---?image=assets/img/lego-dark-green.png
+
+#### Hooks
+
+- Para ativar um hook:
+    conan config set hooks.check_settings
+
+- Para desativar um hook:
+    conan config rm hooks.check_settings
 
 #### Conan Center Index
 
