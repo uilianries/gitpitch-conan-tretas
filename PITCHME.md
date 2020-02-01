@@ -258,6 +258,47 @@ pkg/0.1@user/channel: Miguel de Cervantes
 pkg/0.1@user/channel: pero que las hay las hay
 ```
 
+---?image=assets/img/lego-dark-red.png
+
+#### Conan Data (conandata.yml)
+
+- Arquivo YAML carregado automaticamente pela receita
+- Pode ser acessado através do atributo `conan_data`
+- Útil quando uma mesma receita é usar para qualquer nova versão
+
+---?image=assets/img/lego-dark-red.png
+
+#### Conan Data (conandata.yml)
+
+```yml
+sources:
+  1.0.0:
+    url: "https://ftp.org/release/pkg-1.0.0.tar.gz"
+    sha256: "430ae8354789de4fd19ee52f3b1f739e1f"
+  1.0.1:
+    url: "https://ftp.org/release/pkg-1.0.1.tar.gz"
+    sha256: "d73a8da01e8bf8c7eda40b4c849150"
+patches:
+  1.0.0:
+    patches: "0001-windows-build.patch"
+  1.0.1:
+    patches: []
+```
+
+---?image=assets/img/lego-dark-red.png
+
+#### Conan Data (conandata.yml)
+
+```python
+class Foo(ConanFile):
+    name = "pkg"
+
+  def source(self):
+      tools.get(**self.conan_data["sources"][self.version])
+      for patch in self.conan_data["patches"][self.version]:
+        tools.patch(**patch)
+```
+
 ---?image=assets/img/lego-dark-green.png
 
 #### Conan Center Index
