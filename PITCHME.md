@@ -111,19 +111,19 @@ Ex-Khomp (01/17 - 09/18)
 
     conan create . user/testing
 
-- Mesmo efeito do que o gerador Deploy, porém
+- Mesmo efeito que o gerador Deploy, porém
   já definido na receita.
 
 ---?image=assets/img/lego-dark-green.png
 
 #### Hooks
 
-    https://github.com/conan-io/hooks
+https://github.com/conan-io/hooks
 
 - Função Python que será executada em meio ao fluxo de trabalho
 - Não modifica o cliente Conan ou as receitas
 - Útil para executar passos customizados
-- Exemplos: pylint na receita, disparar CI depois de um upload
+- Exemplos: pylint na receita, disparar CI depois do upload
 
 ---?image=assets/img/lego-dark-green.png
 
@@ -145,25 +145,27 @@ def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
 #### Hooks
 
 - Métodos suportados (não todos):
-  - `pre_export(output, conanfile, conanfile_path, reference, **kwargs)`
-  - `post_export(output, conanfile, conanfile_path, reference, **kwargs)`
-  - `pre_source(output, conanfile, conanfile_path, **kwargs)`
-  - `post_source(output, conanfile, conanfile_path, **kwargs)`
-  - `pre_build(output, conanfile, **kwargs)`
-  - `post_build(output, conanfile, **kwargs)`
-  - `pre_package(output, conanfile, conanfile_path, **kwargs)`
-  - `post_package(output, conanfile, conanfile_path, **kwargs)`
-  - `pre_upload(output, conanfile_path, reference, remote, **kwargs)`
+  - pre_export
+  - post_export
+  - pre_source
+  - post_source
+  - pre_build
+  - post_build
+  - pre_package
+  - post_package
+  - pre_upload
 
 ---?image=assets/img/lego-dark-green.png
 
 #### Hooks
 
 - Para ativar um hook:
-    conan config set hooks.check_settings
+
+    `conan config set hooks.check_settings`
 
 - Para desativar um hook:
-    conan config rm hooks.check_settings
+
+    `conan config rm hooks.check_settings`
 
 #### Conan Center Index
 
