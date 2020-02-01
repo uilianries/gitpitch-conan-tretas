@@ -95,10 +95,10 @@ Ex-Khomp (01/17 - 09/18)
 
     conan install . -g deploy
 
-- Quando precisa instalar tudo em um lugar só
-- Copia todos os artefatos para o diretório atual
-- Não vai pra cache do Conan
-- Útil quando precisa empacotar para o cliente
+- Quando precisar instalar tudo em apenas um lugar
+- Copiar todos os artefatos para o diretório atual
+- Não vai para a cache do Conan
+- Útil quando precisar empacotar para o cliente
 
 ---?image=assets/img/lego-dark-blue.png
 
