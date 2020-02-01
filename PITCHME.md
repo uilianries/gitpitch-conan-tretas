@@ -167,6 +167,50 @@ def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
 
     conan config rm hooks.check_settings
 
+---?image=assets/img/lego-dark-blue.png
+
+#### Python Requires
+
+https://docs.conan.io/en/latest/extending/python_requires
+
+- Permite compartilhar código e arquivos entre diferente receitas
+- Útil para não precisar reescrever mesmo trecho
+- Existe uma versão legado desta feature!
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Python Requires
+
+```python
+# conanfile.py
+from conans import ConanFile
+
+myvar = 123
+
+def myfunct():
+    return 234
+
+class Pkg(ConanFile):
+    pass
+```
+
+    conan export . pyreq/0.1@user/channel
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Python Requires
+
+```python
+from conans import ConanFile
+
+class Pkg(ConanFile):
+    python_requires = "pyreq/0.1@user/channel"
+
+    def build(self):
+        v = self.python_requires["pyreq"].module.myvar
+        f = self.python_requires["pyreq"].module.myfunct()
+        self.output.info("%s,%s" % (v, f))
+```
 
 ---?image=assets/img/lego-dark-green.png
 
