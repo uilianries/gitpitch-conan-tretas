@@ -289,12 +289,12 @@ patches:
 
 ```python
 class Foo(ConanFile):
-  name = "pkg"
+    name = "pkg"
 
-  def source(self):
-      tools.get(**self.conan_data["sources"][self.version])
-      for patch in self.conan_data["patches"][self.version]:
-        tools.patch(**patch)
+    def source(self):
+        tools.get(**self.conan_data["sources"][self.version])
+        for patch in self.conan_data["patches"][self.version]:
+            tools.patch(**patch)
 ```
 
     conan create . pkg/1.0.0@user/channel
