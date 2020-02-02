@@ -712,7 +712,48 @@ include(${CMAKE_BINARY_DIR}/conanworkspace.cmake)
 conan_workspace_subdirectories()
 ```
 
-O `root: chat/0.1@user/testing` define qual é o nó consumidor do gráfico
+A sessão `root: chat/0.1@user/testing` define qual é o nó consumidor do gráfico
+
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+Agora para construir os 3 projetos de uma só vez, bast invocar o comando `workspace`
+
+
+    mkdir build
+    cd build
+    conan workspace install ../conanws.yml
+    cmake --build .
+
+- Este comando colocará os 3 pacotes em modo de edição
+- Aplicará o layout descrito no arquivo
+- Irá construir cada pacote, seguindo a order de dependências
+
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+```
+Scanning dependencies of target say
+[ 12%] Building CXX object ../say/build/Release/CMakeFiles/say.dir/say.cpp.o
+[ 25%] Linking CXX static library libsay.a
+[ 25%] Built target say
+Scanning dependencies of target hello
+[ 37%] Building CXX object ../hello/build/Release/CMakeFiles/hello.dir/hello.cpp.o
+[ 50%] Linking CXX static library libhello.a
+[ 50%] Built target hello
+Scanning dependencies of target chat
+[ 62%] Building CXX object ../chat/build/Release/CMakeFiles/chat.dir/chat.cpp.o
+[ 75%] Linking CXX static library libchat.a
+[ 75%] Built target chat
+Scanning dependencies of target app
+[ 87%] Building CXX object ../chat/build/Release/CMakeFiles/app.dir/app.cpp.o
+[100%] Linking CXX executable app
+[100%] Built target app
+chat/build/Release/app
+Release: Hello World!
+```
 
 ---?image=assets/img/lego-dark-green.png
 
