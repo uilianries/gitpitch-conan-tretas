@@ -444,7 +444,7 @@ Instalando pacotes a partir do lockfile:
 
 O mesmo argumento `--lockfile` pode ser utilizado para os comandos:
 
-@snap[midpoint text-left]
+@snap[text-left]
 - install
 - create
 - export
