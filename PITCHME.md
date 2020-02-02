@@ -597,8 +597,8 @@ Para reverter o modo edição:
 
 #### WORKSPACE
 
-Útil quando precisa trabalhar em mais de um pacote ao mesmo tempo,
-e todos pertecem a um mesmo projeto.
+Útil quando precisa trabalhar em mais de um projeto ao mesmo tempo,
+e todos pertecem a uma mesma raiz.
 
 Assim como no caso anterior, `conan create` é muito lento para o contexto
 
@@ -718,7 +718,7 @@ A sessão `root: chat/0.1@user/testing` define qual é o nó consumidor do gráf
 
 #### WORKSPACE
 
-Agora para construir os 3 projetos de uma só vez, bast invocar o comando `workspace`
+Agora para construir os 3 projetos de uma só vez, basta invocar o comando `workspace`
 
 
     mkdir build
@@ -728,7 +728,7 @@ Agora para construir os 3 projetos de uma só vez, bast invocar o comando `works
 
 - Este comando colocará os 3 pacotes em modo de edição
 - Aplicará o layout descrito no arquivo
-- Irá construir cada pacote, seguindo a order de dependências
+- CMake irá compilar cada biblioteca, seguindo a order de dependências
 
 ---?image=assets/img/lego-dark-blue.png
 
@@ -754,6 +754,15 @@ Scanning dependencies of target app
 chat/build/Release/app
 Release: Hello World!
 ```
+
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+- Note que os pacotes estão em modo de edição,
+portanto, nenhum estará na cache do Conan
+- É possível customizar o profile através de argumentos
+- `workspace` não serve para criar o pacote final
 
 ---?image=assets/img/lego-dark-green.png
 
