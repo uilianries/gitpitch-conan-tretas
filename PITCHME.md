@@ -324,13 +324,19 @@ Revisão específica (RREV):
 
     lib/1.0@conan/stable#RREV
 
+---?image=assets/img/lego-dark-green.png
+
+#### Package Revision
+
+Revisões podem ser fixadas quando você escreve uma referência (continuação):
+
 Pacote que pertence a uma revisão específica (RREV):
 
     lib/1.0@conan/stable#RREV:PACKAGE_ID
 
 Revisão pacote específica (PREV) que pertence a uma revisão específica RREV:
 
-    lib/1.0@conan/stable#RREV:PACKAGE_ID#PREV
+    lib/1.0@conan/stable#RREV:PACKAGE_ID#PREVs
 
 ---?image=assets/img/lego-dark-green.png
 
@@ -343,6 +349,10 @@ Por padrão, a revisão de pacotes **NÃO** está habilitada, para tal:
 Ou, através da variável de ambiente:
 
     export CONAN_REVISIONS_ENABLED=1
+
+---?image=assets/img/lego-dark-green.png
+
+#### Package Revision
 
 ---?image=assets/img/lego-dark-green.png
 
