@@ -305,8 +305,8 @@ class Foo(ConanFile):
 
 - Imutabilidade de pacotes
 - Os pacotes em um servidor nunca são substituídos
-- Receitas possuem sua propria revisão (RREV)
-- Pacotes possuem sua propria revisão (PREV), que são ligadas ao RREV
+- Receitas possuem sua própria revisão (RREV)
+- Pacotes possuem sua própria revisão (PREV), que são ligadas ao RREV
 - Por padrão, sempre a última revisão é instalada
 - No cache do cliente, há apenas uma revisão instalada simultaneamente
 
@@ -334,7 +334,7 @@ Pacote que pertence a uma revisão específica (RREV):
 
     lib/1.0@conan/stable#RREV:PACKAGE_ID
 
-Revisão pacote específica (PREV) que pertence a uma revisão específica RREV:
+pacote de revisão específica (PREV) que pertence a uma revisão específica RREV:
 
     lib/1.0@conan/stable#RREV:PACKAGE_ID#PREVs
 
@@ -356,7 +356,7 @@ Ou, através da variável de ambiente:
 
 Modos de revisão
 
-Poder ser alterado através do atributo `revision_mode` na receita
+Pode ser alterado através do atributo `revision_mode` na receita
 
 - **hash** (padrão): O hash de soma de verificação do manifesto será usado como revisão da receita
 - **scm**: O SHA-1 do commit será usado como revisão da receita
@@ -485,7 +485,7 @@ https://github.com/conan-io/examples/tree/master/features/lockfiles/ci
 
 - Quando você tem um projeto grande, onde:
   - Cria um ou mais apps
-  - E esses apps dependem de várias bibliotecas internas
+  - Esses apps dependem de várias bibliotecas internas
 - O `conan create` se torna muito lento nesse contexto quando ocorre alguma mudança
 - [Package Development Flow](https://docs.conan.io/en/latest/developing_packages/package_dev_flow.html) é muito custoso também
 
@@ -552,7 +552,7 @@ Adicionando a biblioteca say em modo de edição
 
     conan editable add lib/ say/0.1.0@user/channel
 
-Agora sempre a referência sempre irá apontar diretamente
+Agora a referência sempre irá apontar diretamente
 para o diretório lib/, ao invés de apontar para a cache
 do Conan
 
@@ -602,7 +602,7 @@ e todos pertecem a uma mesma raiz.
 
 Assim como no caso anterior, `conan create` é muito lento para o contexto
 
-Por baixo de capo, utiliza o **editable packages**
+Por baixo do capô, utiliza o **editable packages**
 
 ---?image=assets/img/lego-dark-blue.png
 
@@ -664,7 +664,7 @@ root: chat/0.1@user/testing
 
 #### WORKSPACE
 
-A primera sessão, será resolvida pelo comando `workspace`, será
+A primera sessão, será resolvida pelo comando `workspace`,
 equivalente ao uso do comando `editable`:
 
     conan editable add say say/0.1@user/testing --layout=layout.ini
@@ -784,9 +784,9 @@ https://github.com/conan-io/conan-center-index
 #### CONAN CENTER INDEX
 
 - Base de pesquisa através do https://conan.io/center
-- O interessado, abre um PR apenas com a receita e pronto
+- O interessado, abre um PR apenas com a receita
   - Anteriormente, era necessário cada um manter a integração
-    contínua própria e submeter para Bintray cada pacote.
+    contínua própria e submeter para a Bintray cada pacote.
   - Contudo, existem regras de qualidade que limitam a
     liberdade de cada receita.
 
