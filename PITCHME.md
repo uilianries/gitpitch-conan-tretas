@@ -671,6 +671,32 @@ equivalente ao uso do comando `editable`:
     conan editable add hello hello/0.1@user/testing --layout=layout.ini
     conan editable add chat chat/0.1@user/testing --layout=layout.ini
 
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+O arquivo de layout mais uma vez está presente,
+apontando o arranjo de diretórios para os artefatos.
+
+```ini
+# layout.ini
+[build_folder]
+build
+
+[source_folder]
+src
+
+[includedirs]
+src
+
+[libdirs]
+build
+
+[bindirs]
+build
+
+```
+
 ---?image=assets/img/lego-dark-green.png
 
 #### CONAN CENTER INDEX
