@@ -214,7 +214,7 @@ class Pkg(ConanFile):
 
 #### PYTHON REQUIRES
 
-Extendendo classes
+Estendendo classes
 
 ```python
 from conans import ConanFile
