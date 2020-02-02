@@ -354,7 +354,19 @@ Ou, através da variável de ambiente:
 
 #### Package Revision
 
+Modos de revisão
+
+Poder ser alterado através do atributo `revision_mode` na receita
+
+- **hash** (padrão): O hash de soma de verificação do manifesto será usado como revisão da receita
+- **scm**"**: O SHA-1 do commit será usado como revisão da receita
+
 ---?image=assets/img/lego-dark-green.png
+
+Versão necessária pelo servidor:
+
+- conan_server >= 1.13
+- Artifactory >= 6.9
 
 #### Conan Center Index
 
