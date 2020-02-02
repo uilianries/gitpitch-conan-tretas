@@ -444,11 +444,41 @@ Instalando pacotes a partir do lockfile:
 
 O mesmo argumento `--lockfile` pode ser utilizado para os comandos:
 
-@snap[text-left]
 - install
 - create
 - export
 - info
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Lockfiles
+
+Comando `conan graph`, gera e manipula lockfiles
+
+Gerar lockfile sem precisar instalar os binários:
+
+    conan graph lock
+
+Atualizar o lockfile com informações de um novo:
+
+    conan graph update-lock
+
+Saber a ordem de build a partir de um lockfile
+
+    conan graph build-order
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Lockfiles
+
+Lockfiles + CI
+
+Muito longo para apresentar aqui
+
+https://docs.conan.io/en/latest/versioning/lockfiles.html#how-to-use-lockfiles-in-ci
+
+https://github.com/conan-io/examples/tree/master/features/lockfiles/ci
+
 
 ---?image=assets/img/lego-dark-green.png
 
