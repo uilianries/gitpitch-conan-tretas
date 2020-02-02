@@ -381,7 +381,29 @@ Versão necessária pelo servidor:
   - opções
   - configuração desse gráfico de dependência
 - É o *pip freeze* do Conan
-- Utilizado pela revisão de receitas
+- Útil para obter compilações determinísticas
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Lockfiles
+
+Utilizando o lockfile
+
+```ini
+[requires]
+zlib/1.2.11
+```
+
+    conan install .
+
+```
+zlib/1.2.11: Package installed 6af9cc7cb931c5ad942174fd7838eb655717c709
+zlib/1.2.11: Downloaded package revision 4c5a825d90e0aec90feebe62f3e60a7b
+conanfile.txt: Generator txt created conanbuildinfo.txt
+conanfile.txt: Generated conaninfo.txt
+conanfile.txt: Generated graphinfo
+```
+
 
 ---?image=assets/img/lego-dark-green.png
 
