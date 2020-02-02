@@ -6,7 +6,7 @@
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Link desta Apresentação
+#### LINK DESTA APRESENTAÇÃO
 
 http://bit.ly/3aL13xc
 
@@ -63,7 +63,7 @@ Ex-Khomp (01/17 - 09/18)
 
 ---?image=assets/img/lego-dark-red.png
 
-#### Sobre esta Apresentação
+#### SOBRE ESTA APRESENTAÇÃO
 
 ![crush-your-enemies](assets/gif/crush.gif)
 
@@ -75,7 +75,7 @@ Ex-Khomp (01/17 - 09/18)
 
 ---?image=assets/img/lego-dark-red.png
 
-#### Sobre esta Apresentação
+#### TÓPICOS DESTA APRESENTAÇÃO
 
 - Deploy generator
 - Deploying packages
@@ -91,7 +91,7 @@ Ex-Khomp (01/17 - 09/18)
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Deploy Generator
+#### DEPLOY GENERATOR
 
     conan install . -g deploy
 
@@ -102,7 +102,7 @@ Ex-Khomp (01/17 - 09/18)
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Deploying Packages
+#### DEPLOYING PACKAGES
 
 ```python
     def deploy(self)
@@ -116,7 +116,7 @@ Ex-Khomp (01/17 - 09/18)
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Hooks
+#### HOOKS
 
 https://github.com/conan-io/hooks
 
@@ -127,7 +127,7 @@ https://github.com/conan-io/hooks
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Hooks
+#### HOOKS
 
 - Criar um script Python, utilizando os métodos suportados
 
@@ -142,7 +142,7 @@ def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Hooks
+#### HOOKS
 
 - Métodos suportados (não todos):
   - pre_export
@@ -157,7 +157,7 @@ def pre_export(output, conanfile, conanfile_path, reference, **kwargs):
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Hooks
+#### HOOKS
 
 Para ativar um hook:
 
@@ -169,7 +169,7 @@ Para desativar um hook:
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Python Requires
+#### PYTHON REQUIRES
 
 - Permite compartilhar código e arquivos entre diferente receitas
 - Útil para não precisar reescrever mesmo trecho
@@ -177,7 +177,7 @@ Para desativar um hook:
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Python Requires
+#### PYTHON REQUIRES
 
 ```python
 # conanfile.py
@@ -196,7 +196,7 @@ class Pkg(ConanFile):
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Python Requires
+#### PYTHON REQUIRES
 
 ```python
 from conans import ConanFile
@@ -212,7 +212,7 @@ class Pkg(ConanFile):
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Python Requires
+#### PYTHON REQUIRES
 
 Extendendo classes
 
@@ -233,7 +233,7 @@ class MyBase(ConanFile):
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Python Requires
+#### PYTHON REQUIRES
 
 ```python
 from conans import ConanFile
@@ -258,7 +258,7 @@ pkg/0.1@user/channel: pero que las hay las hay
 
 ---?image=assets/img/lego-dark-red.png
 
-#### Conan Data (conandata.yml)
+#### CONAN DATA (conandata.yml)
 
 - Arquivo YAML carregado automaticamente pela receita
 - Pode ser acessado através do atributo `conan_data`
@@ -266,7 +266,7 @@ pkg/0.1@user/channel: pero que las hay las hay
 
 ---?image=assets/img/lego-dark-red.png
 
-#### Conan Data (conandata.yml)
+#### CONAN DATA (conandata.yml)
 
 ```yml
 sources:
@@ -285,7 +285,7 @@ patches:
 
 ---?image=assets/img/lego-dark-red.png
 
-#### Conan Data (conandata.yml)
+#### CONAN DATA (conandata.yml)
 
 ```python
 class Foo(ConanFile):
@@ -301,7 +301,7 @@ class Foo(ConanFile):
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Package Revision
+#### PACKAGE REVISION
 
 - Imutabilidade de pacotes
 - Os pacotes em um servidor nunca são substituídos
@@ -312,7 +312,7 @@ class Foo(ConanFile):
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Package Revision
+#### PACKAGE REVISION
 
 Revisões podem ser fixadas quando você escreve uma referência:
 
@@ -326,7 +326,7 @@ Revisão específica (RREV):
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Package Revision
+#### PACKAGE REVISION
 
 Revisões podem ser fixadas quando você escreve uma referência (continuação):
 
@@ -340,7 +340,7 @@ Revisão pacote específica (PREV) que pertence a uma revisão específica RREV:
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Package Revision
+#### PACKAGE REVISION
 
 Por padrão, a revisão de pacotes **NÃO** está habilitada, para tal:
 
@@ -352,7 +352,7 @@ Ou, através da variável de ambiente:
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Package Revision
+#### PACKAGE REVISION
 
 Modos de revisão
 
@@ -363,7 +363,7 @@ Poder ser alterado através do atributo `revision_mode` na receita
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Package Revision
+#### PACKAGE REVISION
 
 Versão necessária pelo servidor:
 
@@ -373,7 +373,7 @@ Versão necessária pelo servidor:
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Lockfiles
+#### LOCKFILES
 
 - Arquivos com um gráfico de dependência, incluindo:
   - as versões exatas
@@ -385,7 +385,7 @@ Versão necessária pelo servidor:
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Lockfiles
+#### LOCKFILES
 
 Utilizando o lockfile
 
@@ -407,7 +407,7 @@ conanfile.txt: Generated graphinfo
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Lockfiles
+#### LOCKFILES
 
 Estrutura do arquivo gerado, `conan.lock`:
 
@@ -436,7 +436,7 @@ Estrutura do arquivo gerado, `conan.lock`:
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Lockfiles
+#### LOCKFILES
 
 Instalando pacotes a partir do lockfile:
 
@@ -451,7 +451,7 @@ O mesmo argumento `--lockfile` pode ser utilizado para os comandos:
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Lockfiles
+#### LOCKFILES
 
 Comando `conan graph`, gera e manipula lockfiles
 
@@ -469,7 +469,7 @@ Saber a ordem de build a partir de um lockfile
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### Lockfiles
+#### LOCKFILES
 
 Lockfiles + CI
 
@@ -479,10 +479,16 @@ https://docs.conan.io/en/latest/versioning/lockfiles.html#how-to-use-lockfiles-i
 
 https://github.com/conan-io/examples/tree/master/features/lockfiles/ci
 
+---?image=assets/img/lego-dark-red.png
+
+#### EDITABLE PACKAGES
+
+
+
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Conan Center Index
+#### CONAN CENTER INDEX
 
 https://github.com/conan-io/conan-center-index
 
@@ -497,7 +503,7 @@ https://github.com/conan-io/conan-center-index
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Conan Center Index
+#### CONAN CENTER INDEX
 
 - Base de pesquisa através do https://conan.io/center
 - O interessado, abre um PR apenas com a receita e pronto
@@ -508,7 +514,7 @@ https://github.com/conan-io/conan-center-index
 
 ---?image=assets/img/lego-dark-green.png
 
-#### Conan Days
+#### CONAN DAYS
 
 ![conan-days](assets/img/conan-days.png)
 
@@ -521,7 +527,7 @@ http://bit.ly/2TU94Ki
 
 ---?image=assets/img/lego-dark-red.png
 
-#### Wheel of Pain
+#### WHEEL OF PAIN
 
 ![wheel-of-pain](assets/gif/wheel.gif)
 
@@ -548,7 +554,7 @@ Vamos discutir os sintomas do Dev:
 
 ### OBRIGADO!
 
-##### Perguntas, Dúvidas, Curiosidades ?
+##### PERGUNTAS, DÚVIDAS, CURIOSIDADES ?
 
 Você pode me encontrar em:
 
