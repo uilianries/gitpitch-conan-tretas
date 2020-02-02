@@ -540,17 +540,29 @@ Construindo o app
 
 #### EDITABLE PACKAGES
 
-Construindo o app
+Caso houver uma nova mudança na bibloteca `say`,
+será necessário empacotar novamente.
 
-    cd app/
-    mkdir build
-    cd build/
-    conan install ..
-    cmake ..
-    cmake --build .
-    ./hello
-    Hello World!
+Agora imagine em projetos maiores
 
+---?image=assets/img/lego-dark-red.png
+
+#### EDITABLE PACKAGES
+
+Adicionando a biblioteca say em modo de edição
+
+    conan editable add lib/ say/0.1.0@user/channel
+
+Agora sempre a referência sempre irá apontar diretamente
+para o diretório lib/, ao invés de apontar para a cache
+do Conan
+
+Agora construímos o `app` como anteriormente, porém:
+
+```
+fatal error: say.h: No such file or directory
+    1 | #include "say.h"
+```
 
 ---?image=assets/img/lego-dark-green.png
 
