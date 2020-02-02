@@ -409,7 +409,7 @@ conanfile.txt: Generated graphinfo
 
 #### Lockfiles
 
-Estrtutura do arquivo gerado, `conan.lock`
+Estrutura do arquivo gerado, `conan.lock`:
 
 ```json
 {
@@ -433,6 +433,15 @@ Estrtutura do arquivo gerado, `conan.lock`
  "version": "0.2"
 }
 ```
+
+---?image=assets/img/lego-dark-blue.png
+
+#### Lockfiles
+
+Instalando pacotes a partir do lockfile:
+
+    conan install . --lockfile
+
 
 ---?image=assets/img/lego-dark-green.png
 
