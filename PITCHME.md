@@ -504,6 +504,7 @@ novamente através do `conan create`
 
 #### EDITABLE PACKAGES
 
+```
 |- app/
 |  |- hello.cpp
 |  |- CMakeLists.txt
@@ -514,6 +515,7 @@ novamente através do `conan create`
 |  |- say.cpp
 |  |- CMakeLists.txt
 |  |- conanfile.py
+```
 
     conan create lib/ say/0.1.0@user/channel
 
