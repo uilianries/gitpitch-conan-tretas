@@ -504,6 +504,8 @@ novamente através do `conan create`
 
 #### EDITABLE PACKAGES
 
+Construindo a lib
+
 ```
 |- app/
 |  |- hello.cpp
@@ -518,6 +520,21 @@ novamente através do `conan create`
 ```
 
     conan create lib/ say/0.1.0@user/channel
+
+---?image=assets/img/lego-dark-red.png
+
+#### EDITABLE PACKAGES
+
+Construindo o app
+
+    cd app/
+    mkdir build
+    cd build/
+    conan install ..
+    cmake ..
+    cmake --build .
+    ./hello
+    Hello World!
 
 
 ---?image=assets/img/lego-dark-green.png
