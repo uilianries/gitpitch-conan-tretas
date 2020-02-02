@@ -632,6 +632,15 @@ Projeto exemplo utilizando 3 bibliotecas:
         └── say.h
 ```
 
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+Cada pacote poderia ser construído individualmente, seguindo a ordem
+necessária:
+
+`say <- hello <- chat`
+
 ---?image=assets/img/lego-dark-green.png
 
 #### CONAN CENTER INDEX
