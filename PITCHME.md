@@ -645,7 +645,7 @@ necessária:
 
 #### WORKSPACE
 
-Vamos adicionar um arquivo que descreve o nosso **workspace**
+Vamos adicionar o arquivo *conanws.yml*, que descreverá o nosso **workspace**:
 
 ```yml
 editables:
@@ -659,6 +659,17 @@ layout: layout.ini
 workspace_generator: cmake
 root: chat/0.1@user/testing
 ```
+
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+A primera sessão, será resolvida pelo comando `workspace`, será
+equivalente ao uso do comando `editable`:
+
+    conan editable add say say/0.1@user/testing --layout=layout.ini
+    conan editable add hello hello/0.1@user/testing --layout=layout.ini
+    conan editable add chat chat/0.1@user/testing --layout=layout.ini
 
 ---?image=assets/img/lego-dark-green.png
 
