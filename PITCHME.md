@@ -316,23 +316,33 @@ class Foo(ConanFile):
 
 Revisões podem ser fixadas quando você escreve uma referência:
 
-Última revisão (RREV) disponível:</br>
+Última revisão (RREV) disponível (padrão):
+
     lib/1.0@conan/stable
 
-Revisão específica (RREV):</br>
+Revisão específica (RREV):
+
     lib/1.0@conan/stable#RREV
 
-Pacote que pertence a uma revisão específica (RREV):</br>
+Pacote que pertence a uma revisão específica (RREV):
+
     lib/1.0@conan/stable#RREV:PACKAGE_ID
 
-Revisão pacote específica (PREV) que pertence a uma revisão específica RREV:</br>
+Revisão pacote específica (PREV) que pertence a uma revisão específica RREV:
+
     lib/1.0@conan/stable#RREV:PACKAGE_ID#PREV
 
 ---?image=assets/img/lego-dark-green.png
 
 #### Package Revision
 
-Por padrão, a revisão de pacotes **NÃO** está habilitada
+Por padrão, a revisão de pacotes **NÃO** está habilitada, para tal:
+
+    conan config set general.revisions_enabled=1
+
+Ou, através da variável de ambiente:
+
+    export CONAN_REVISIONS_ENABLED=1
 
 ---?image=assets/img/lego-dark-green.png
 
