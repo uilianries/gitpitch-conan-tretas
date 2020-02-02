@@ -487,8 +487,35 @@ https://github.com/conan-io/examples/tree/master/features/lockfiles/ci
   - Cria um ou mais apps
   - E esses apps dependem de várias bibliotecas internas
   - Essas bibliotecas são desenvolvidas sob o mesmo projeto
-- O `conan create` se torna muito lento nesse contexto
+- O `conan create` se torna muito lento nesse contexto quando ocorre alguma mudança
 - [Package Development Flow](https://docs.conan.io/en/latest/developing_packages/package_dev_flow.html) é muito custoso também
+
+---?image=assets/img/lego-dark-red.png
+
+#### EDITABLE PACKAGES
+
+A ideia está em ligar o diretório dos artefatos (headers, libs e binários),
+através de uma referência de pacote
+
+Para qualquer nova mudança em uma biblioteca, não será necessário empacotar
+novamente através do `conan create`
+
+---?image=assets/img/lego-dark-red.png
+
+#### EDITABLE PACKAGES
+
+|- app/
+|  |- hello.cpp
+|  |- CMakeLists.txt
+|  |- conanfile.txt
+|
+|- lib/
+|  |- say.h
+|  |- say.cpp
+|  |- CMakeLists.txt
+|  |- conanfile.py
+
+    conan create lib/ say/0.1.0@user/channel
 
 
 ---?image=assets/img/lego-dark-green.png
