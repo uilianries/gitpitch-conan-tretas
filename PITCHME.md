@@ -172,7 +172,7 @@ Para desativar um hook:
 #### PYTHON REQUIRES
 
 - Permite compartilhar códigos e arquivos entre diferentes receitas
-- Útil para não precisar reescrever mesmo trecho
+- Útil para não precisar reescrever o mesmo trecho
 - Existe uma versão legado desta feature!
 
 ---?image=assets/img/lego-dark-blue.png
