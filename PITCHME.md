@@ -171,7 +171,7 @@ Para desativar um hook:
 
 #### PYTHON REQUIRES
 
-- Permite compartilhar código e arquivos entre diferente receitas
+- Permite compartilhar códigos e arquivos entre diferentes receitas
 - Útil para não precisar reescrever mesmo trecho
 - Existe uma versão legado desta feature!
 
