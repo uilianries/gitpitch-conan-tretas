@@ -594,9 +594,9 @@ Para reverter o modo edição:
     conan editable remove say/0.1.0@user/channel
     Removed editable mode for reference 'say/0.1.0@user/channel'
 
----?image=assets/img/lego-dark-red.png
+---?image=assets/img/lego-dark-blue.png
 
-#### EDITABLE PACKAGES
+#### WORKFLOWS
 
 ---?image=assets/img/lego-dark-green.png
 
