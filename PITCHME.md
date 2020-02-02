@@ -312,6 +312,24 @@ class Foo(ConanFile):
 
 ---?image=assets/img/lego-dark-green.png
 
+#### Package Revision
+
+Revisões podem ser fixadas quando você escreve uma referência:
+
+Última revisão (RREV) disponível:
+    lib/1.0@conan/stable
+
+Revisão específica (RREV):
+    lib/1.0@conan/stable#RREV
+
+Pacote que pertence a uma revisão específica (RREV):
+    lib/1.0@conan/stable#RREV:PACKAGE_ID
+
+Revisão pacote específica (PREV) que pertence a uma revisão específica RREV:
+    lib/1.0@conan/stable#RREV:PACKAGE_ID#PREV
+
+---?image=assets/img/lego-dark-green.png
+
 #### Conan Center Index
 
 https://github.com/conan-io/conan-center-index
