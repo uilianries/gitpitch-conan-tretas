@@ -697,6 +697,23 @@ build
 
 ```
 
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+Por fim, adicionamos uma receita CMake na raiz do projeto,
+para configurar o ambiente CMake, ao gerar todos os pacotes
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+project(WorkspaceProject)
+
+include(${CMAKE_BINARY_DIR}/conanworkspace.cmake)
+conan_workspace_subdirectories()
+```
+
+O `root: chat/0.1@user/testing` define qual é o nó consumidor do gráfico
+
 ---?image=assets/img/lego-dark-green.png
 
 #### CONAN CENTER INDEX
