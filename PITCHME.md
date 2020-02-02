@@ -486,7 +486,6 @@ https://github.com/conan-io/examples/tree/master/features/lockfiles/ci
 - Quando você tem um projeto grande, onde:
   - Cria um ou mais apps
   - E esses apps dependem de várias bibliotecas internas
-  - Essas bibliotecas são desenvolvidas sob o mesmo projeto
 - O `conan create` se torna muito lento nesse contexto quando ocorre alguma mudança
 - [Package Development Flow](https://docs.conan.io/en/latest/developing_packages/package_dev_flow.html) é muito custoso também
 
@@ -597,6 +596,41 @@ Para reverter o modo edição:
 ---?image=assets/img/lego-dark-blue.png
 
 #### WORKSPACE
+
+Útil quando precisa trabalhar em mais de um pacote ao mesmo tempo,
+e todos pertecem a um mesmo projeto.
+
+Assim como no caso anterior, `conan create` é muito lento para o contexto
+
+Por baixo de capo, utiliza o **editable packages**
+
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+Projeto exemplo utilizando 3 bibliotecas:
+
+```
+├── chat
+│   ├── conanfile.py
+│   └── src
+│       ├── app.cpp
+│       ├── chat.cpp
+│       ├── chat.h
+│       └── CMakeLists.txt
+├── hello
+│   ├── conanfile.py
+│   └── src
+│       ├── CMakeLists.txt
+│       ├── hello.cpp
+│       └── hello.h
+└── say
+    ├── conanfile.py
+    └── src
+        ├── CMakeLists.txt
+        ├── say.cpp
+        └── say.h
+```
 
 ---?image=assets/img/lego-dark-green.png
 
