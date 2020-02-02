@@ -641,6 +641,25 @@ necessária:
 
 `say <- hello <- chat`
 
+---?image=assets/img/lego-dark-blue.png
+
+#### WORKSPACE
+
+Vamos adicionar um arquivo que descreve o nosso **workspace**
+
+```yml
+editables:
+    say/0.1@user/testing:
+        path: say
+    hello/0.1@user/testing:
+        path: hello
+    chat/0.1@user/testing:
+        path: chat
+layout: layout.ini
+workspace_generator: cmake
+root: chat/0.1@user/testing
+```
+
 ---?image=assets/img/lego-dark-green.png
 
 #### CONAN CENTER INDEX
