@@ -82,10 +82,10 @@ Ex-Khomp (01/17 - 09/18)
 - Hooks
 - Python requires
 - conandata.yml
+- Package Revisions
+- Lockfiles
 - Editable packages
 - Workflows
-- Lockfiles
-- Package Revisions
 - Conan Center Index
 - Conan Days
 
@@ -298,6 +298,12 @@ class Foo(ConanFile):
 ```
 
     conan create . pkg/1.0.0@user/channel
+
+---?image=assets/img/lego-dark-green.png
+
+#### Package Revision
+
+-
 
 ---?image=assets/img/lego-dark-green.png
 
