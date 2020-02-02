@@ -85,7 +85,7 @@ Ex-Khomp (01/17 - 09/18)
 - Package Revisions
 - Lockfiles
 - Editable packages
-- Workflows
+- Workspace
 - Conan Center Index
 - Conan Days
 
@@ -596,7 +596,7 @@ Para reverter o modo edição:
 
 ---?image=assets/img/lego-dark-blue.png
 
-#### WORKFLOWS
+#### WORKSPACE
 
 ---?image=assets/img/lego-dark-green.png
 
