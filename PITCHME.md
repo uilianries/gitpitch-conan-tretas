@@ -483,7 +483,12 @@ https://github.com/conan-io/examples/tree/master/features/lockfiles/ci
 
 #### EDITABLE PACKAGES
 
-
+- Quando você tem um projeto grande, onde:
+  - Cria um ou mais apps
+  - E esses apps dependem de várias bibliotecas internas
+  - Essas bibliotecas são desenvolvidas sob o mesmo projeto
+- O `conan create` se torna muito lento nesse contexto
+- [Package Development Flow](https://docs.conan.io/en/latest/developing_packages/package_dev_flow.html) é muito custoso também
 
 
 ---?image=assets/img/lego-dark-green.png
