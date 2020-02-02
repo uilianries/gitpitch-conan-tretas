@@ -371,6 +371,18 @@ Versão necessária pelo servidor:
 - Artifactory >= 6.9
 - Bintray (qualquer versão)
 
+---?image=assets/img/lego-dark-blue.png
+
+#### Lockfiles
+
+- Arquivos com um gráfico de dependência, incluindo:
+  - as versões exatas
+  - revisões
+  - opções
+  - configuração desse gráfico de dependência
+- É o *pip freeze* do Conan
+- Utilizado pela revisão de receitas
+
 ---?image=assets/img/lego-dark-green.png
 
 #### Conan Center Index
