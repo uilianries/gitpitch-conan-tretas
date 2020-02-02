@@ -303,7 +303,12 @@ class Foo(ConanFile):
 
 #### Package Revision
 
--
+- Imutabilidade de pacotes
+- Os pacotes em um servidor nunca são substituídos
+- Receitas possuem sua propria revisão (RREV)
+- Pacotes possuem sua propria revisão (PREV), que são ligadas ao RREV
+- Por padrão, sempre a última revisão é instalada
+- No cache do cliente, há apenas uma revisão instalada simultaneamente
 
 ---?image=assets/img/lego-dark-green.png
 
