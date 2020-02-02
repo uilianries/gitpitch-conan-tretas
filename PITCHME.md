@@ -390,6 +390,7 @@ Versão necessária pelo servidor:
 Utilizando o lockfile
 
 ```ini
+# conanfile.txt
 [requires]
 zlib/1.2.11
 ```
@@ -404,6 +405,34 @@ conanfile.txt: Generated conaninfo.txt
 conanfile.txt: Generated graphinfo
 ```
 
+---?image=assets/img/lego-dark-blue.png
+
+#### Lockfiles
+
+Estrtutura do arquivo gerado, `conan.lock`
+
+```json
+{
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++\ncompiler.version=9\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "pref": null,
+    "options": "zlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#419994c54789da229ef991be6c2563b3": "1"
+    },
+    "path": "/tmp/python_requires/conanfile.txt"
+   },
+   "1": {
+    "pref": "zlib/1.2.11#419994c54789da229ef991be6c2563b3:6af9cc7cb931c5ad942174fd7838eb655717c709#4c5a825d90e0aec90feebe62f3e60a7b",
+    "options": "fPIC=True\nminizip=False\nshared=False"
+   }
+  }
+ },
+ "version": "0.2"
+}
+```
 
 ---?image=assets/img/lego-dark-green.png
 
