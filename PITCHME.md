@@ -557,12 +557,42 @@ Agora sempre a referência sempre irá apontar diretamente
 para o diretório lib/, ao invés de apontar para a cache
 do Conan
 
-Agora construímos o `app` como anteriormente, porém:
+---?image=assets/img/lego-dark-red.png
 
+#### EDITABLE PACKAGES
+
+Por padrão, os headers serão procurados no diretório `include` e
+as bibliotecas no diretório `lib`
+
+Para descrever onde encontrar os artefatos corretamente,
+será necessário um arquivo de *layout*:
+
+```ini
+# layout.ini
+[includedirs]
+./
+
+[libdirs]
+build/lib
 ```
-fatal error: say.h: No such file or directory
-    1 | #include "say.h"
-```
+
+    conan editable add lib/ say/0.1.0@user/channel --layout=lib/layout.ini
+    Using layout file: lib/layout.ini
+    Reference 'say/0.1.0@user/channel' in editable mode
+
+---?image=assets/img/lego-dark-red.png
+
+#### EDITABLE PACKAGES
+
+A partir deste ponto, não será mais necessário empacotar a biblioteca
+`say` para cada nova construção realizada.
+
+O executável `hello` vai ligar automaticamente a referência da biblioteca
+
+Para reverter o modo edição:
+
+    conan editable remove say/0.1.0@user/channel
+    Removed editable mode for reference 'say/0.1.0@user/channel'
 
 ---?image=assets/img/lego-dark-green.png
 
