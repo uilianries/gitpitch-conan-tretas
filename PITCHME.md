@@ -442,6 +442,12 @@ Instalando pacotes a partir do lockfile:
 
     conan install . --lockfile
 
+O mesmo argumento `--lockfile` pode ser utilizado para os comandos:
+
+- install
+- create
+- export
+- info
 
 ---?image=assets/img/lego-dark-green.png
 
