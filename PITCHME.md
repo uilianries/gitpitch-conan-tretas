@@ -803,6 +803,17 @@ http://bit.ly/2TU94Ki
 - Treinamentos e feedback das empresas
 - Ingresso variam entre €50 e €450
 
+---?image=assets/img/lego-dark-green.png
+
+#### CONAN CENTER WEBINAR
+
+bit.ly/2Owr89U
+
+12 de Fevereiro, às 15:30
+
+Desenvolva um fluxo de trabalho completo do DevOps para C / C ++.
+Aprenda a gerenciar o software C / C ++ como pacotes binários no ciclo de vida do DevOps.
+
 ---?image=assets/img/lego-dark-red.png
 
 #### WHEEL OF PAIN
