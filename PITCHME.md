@@ -811,8 +811,8 @@ https://bit.ly/2Owr89U
 
 12 de Fevereiro, às 15:30
 
-Desenvolva um fluxo de trabalho completo do DevOps para C / C ++.
-Aprenda a gerenciar o software C / C ++ como pacotes binários no ciclo de vida do DevOps.
+- Desenvolva um fluxo de trabalho completo do DevOps para C/C ++
+- Aprenda a gerenciar C/C++ como pacotes binários no ciclo de vida do DevOps
 
 ---?image=assets/img/lego-dark-red.png
 
