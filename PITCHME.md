@@ -807,7 +807,7 @@ http://bit.ly/2TU94Ki
 
 #### CONAN CENTER WEBINAR
 
-bit.ly/2Owr89U
+https://bit.ly/2Owr89U
 
 12 de Fevereiro, às 15:30
 
